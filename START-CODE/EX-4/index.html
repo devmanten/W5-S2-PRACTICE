@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-actions">
+                <div class="notification">
+                    <i class="far fa-bell fa-lg"></i>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <span class="user-name">John Doe</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-chart-pie"></i>
+                <h1>Dashboard</h1>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Analytics</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Orders</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Customers</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <span>Products</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-title">
+                <h2>Dashboard Overview</h2>
+                <button class="report-btn">
+                    <i class="fas fa-download"></i> Generate Report
+                </button>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-cards">
+                <div class="stat-card card-1">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>1,254</h3>
+                    <p>Total Orders</p>
+                    <span class="stat-change positive">+12% from last month</span>
+                </div>
+                <div class="stat-card card-2">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>$12,540</h3>
+                    <p>Total Revenue</p>
+                    <span class="stat-change positive">+8% from last month</span>
+                </div>
+                <div class="stat-card card-3">
+                    <i class="fas fa-users"></i>
+                    <h3>3,215</h3>
+                    <p>Customers</p>
+                    <span class="stat-change positive">+5% from last month</span>
+                </div>
+                <div class="stat-card card-4">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>86%</h3>
+                    <p>Conversion Rate</p>
+                    <span class="stat-change positive">+2% from last month</span>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-container">
+                <div class="chart">
+                    <div class="chart-header">
+                        <h3>Revenue Overview</h3>
+                        <select>
+                            <option>Last 7 Days</option>
+                            <option>Last 30 Days</option>
+                            <option>Last 90 Days</option>
+                        </select>
+                    </div>
+                    <div class="chart-placeholder">
+                        <i class="fas fa-chart-bar fa-2x"></i>
+                        <span>Revenue Chart</span>
+                    </div>
+                </div>
+                <div class="chart">
+                    <div class="chart-header">
+                        <h3>Traffic Sources</h3>
+                        <select>
+                            <option>This Week</option>
+                            <option>Last Week</option>
+                        </select>
+                    </div>
+                    <div class="chart-placeholder">
+                        <i class="fas fa-chart-pie fa-2x"></i>
+                        <span>Traffic Chart</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activities -->
+            <div class="recent-activities">
+                <h3>Recent Activities</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon user">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>New user registered</h4>
+                            <p>John Smith has created an account</p>
+                        </div>
+                        <div class="activity-time">2 min ago</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon payment">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Payment received</h4>
+                            <p>Order #3258 payment confirmed</p>
+                        </div>
+                        <div class="activity-time">15 min ago</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon order">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Order shipped</h4>
+                            <p>Order #3257 has been shipped</p>
+                        </div>
+                        <div class="activity-time">45 min ago</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon user">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>New review</h4>
+                            <p>Sarah Johnson left a 5-star review</p>
+                        </div>
+                        <div class="activity-time">1 hour ago</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Simple script to toggle active state on nav items
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('.nav-item').forEach(nav => {
+                    nav.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
